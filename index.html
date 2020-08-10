@@ -15,15 +15,15 @@
       
       
       <link rel="shortcut icon" href="examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
     
     
       
-        <title>LSP Mode - Language Server Protocol support for Emacs</title>
+        <title>LSP Mode - Language Server Protocol support for Emacs - LSP Mode - LSP support for Emacs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.947af8d5.min.css">
       
       
     
@@ -44,7 +44,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165661257-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -462,8 +462,8 @@
 
 
   <li class="md-nav__item">
-    <a href="page/performance/" title="Perfomance" class="md-nav__link">
-      Perfomance
+    <a href="page/performance/" title="Performance" class="md-nav__link">
+      Performance
     </a>
   </li>
 
@@ -947,7 +947,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-bingo/" title="Go (bingo)" class="md-nav__link">
+    <a href="page/lsp-bingo.md" title="Go (bingo)" class="md-nav__link">
       Go (bingo)
     </a>
   </li>
@@ -1832,7 +1832,7 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
     <a href="https://github.com/tigersoldier/company-lsp">company-lsp</a> is no
     longer supported).</li>
 <li>Hovers - using <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a></li>
-<li>Code actions - via <code>lsp-execute-code-action</code>, <a href="./page/settings/#code-actions-on-modeline">modeline</a> (recommended) or <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> sideline.</li>
+<li>Code actions - via <code>lsp-execute-code-action</code>, <a href="./page/main-features/#code-actions-on-modeline">modeline</a> (recommended) or <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> sideline.</li>
 <li>Code outline - using builtin
     <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html">imenu</a>
     or <code>helm-imenu</code></li>
@@ -1843,9 +1843,9 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
 <li>Code lens</li>
 <li>Symbol highlights</li>
 <li>Formatting</li>
-<li><a href="./page/settings/#checking-project-errors">Project errors</a> on modeline</li>
+<li><a href="./page/main-features/#project-errors-on-modeline">Project errors</a> on modeline</li>
 <li>Debugger - <a href="https://emacs-lsp.github.io/dap-mode/">dap-mode</a></li>
-<li><a href="./page/settings/#breadcrumb-on-headerline">Breadcrumb on headerline</a></li>
+<li><a href="./page/main-features/#breadcrumb-on-headerline">Breadcrumb on headerline</a></li>
 <li>Helm integration -
     <a href="https://github.com/emacs-lsp/helm-lsp/">helm-lsp</a></li>
 <li>Ivy integration - <a href="https://github.com/emacs-lsp/lsp-ivy/">lsp-ivy</a></li>
@@ -1878,6 +1878,8 @@ most popular Emacs packages like <code>company</code>, <code>flycheck</code> and
     package that displays available keybindings in popup</li>
 <li><a href="https://github.com/bbatsov/projectile/">projectile</a> - Project
     Interaction Library for Emacs</li>
+<li><a href="https://github.com/ubolonton/emacs-tree-sitter">emacs-tree-sitter</a> - Faster, fine-grained code highlighting via <a href="https://github.com/tree-sitter/tree-sitter">tree-sitter</a>.</li>
+<li><a href="https://akrl.sdf.org/gccemacs.html">gccemacs</a> - modified Emacs capable of compiling and running Emacs Lisp as native code.</li>
 </ul>
 <h2 id="contributions">Contributions<a class="headerlink" href="#contributions" title="Permanent link">#</a></h2>
 <p>Contributions are very much welcome.</p>
@@ -2025,7 +2027,7 @@ primary working on/responsible for.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: July 18, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2020</span>
     
   </small>
 </div>
@@ -2113,15 +2115,15 @@ primary working on/responsible for.</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: ".",
           features: ["tabs"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "assets/javascripts/worker/search.8e2cddea.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

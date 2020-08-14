@@ -62,6 +62,7 @@
     "full-name": "CMake",
     "server-name": "cmake-language-server",
     "server-url": "https://github.com/regen100/cmake-language-server",
+    "installation-url": "https://github.com/regen100/cmake-language-server#installation",
     "installation": "pip install cmake-language-server",
     "debugger": "Not relevant"
   },
@@ -70,7 +71,7 @@
     "full-name": "Crystal",
     "server-name": "scry",
     "server-url": "https://github.com/crystal-lang-tools/scry",
-    "installation-url": "https://github.com/crystal-lang-tools/scry",
+    "installation-url": "https://github.com/crystal-lang-tools/scry#installation",
     "debugger": "Not available"
   },
   {
@@ -244,6 +245,23 @@
     "debugger": "Not available"
   },
   {
+    "name": "lua-language-server",
+    "full-name": "Lua",
+    "server-name": "lua-language-server",
+    "installation-url": "https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)",
+    "server-url": "https://github.com/sumneko/lua-language-server",
+    "debugger": "Not available"
+  },
+  {
+    "name": "lua-lsp",
+    "full-name": "Lua",
+    "server-name": "lua-lsp",
+    "installation-url": "https://luarocks.org/modules/alloyed/lua-lsp",
+    "server-url": "https://github.com/Alloyed/lua-lsp",
+    "installation": "luarocks install --server=https://luarocks.org/dev lua-lsp --local",
+    "debugger": "Not available"
+  },
+  {
     "name": "nim",
     "full-name": "Nim",
     "server-name": "nimlsp",
@@ -326,6 +344,16 @@
     "debugger": "Yes"
   },
   {
+    "name": "pyright",
+    "full-name": "Python(Pyright)",
+    "server-name": "pyright-langserver",
+    "server-url": "https://github.com/microsoft/pyright",
+    "client-name": "lsp-pyright",
+    "client-url": "https://github.com/emacs-lsp/lsp-pyright",
+    "installation-url": "https://github.com/emacs-lsp/lsp-pyright",
+    "debugger": "Yes"
+  },
+  {
     "name": "python-ms",
     "full-name": "Python(Microsoft)",
     "server-name": "Microsoft Python Language Server",
@@ -340,8 +368,18 @@
     "full-name": "R",
     "server-name": "languageserver",
     "server-url": "https://github.com/REditorSupport/languageserver",
+    "installation-url": "https://github.com/REditorSupport/languageserver",
     "installation": "install.packages(“languageserver”)",
     "debugger": "Not available"
+  },
+  {
+    "name": "robot",
+    "full-name": "robot framework",
+    "server-name": "rf-intellisense",
+    "server-url": "https://github.com/tomi/vscode-rf-language-server",
+    "installation-url": "https://github.com/tomi/vscode-rf-language-server/tree/master/client",
+    "installation": "pip install robotframework --user",
+    "debugger": "Yes"
   },
   {
     "name": "rust",
@@ -381,6 +419,14 @@
     "server-name": "sqls",
     "server-url": "https://github.com/lighttiger2505/sqls",
     "installation": "go get github.com/lighttiger2505/sqls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "svelte",
+    "full-name": "Svelte",
+    "server-name": "svelteserver",
+    "server-url": "https://github.com/sveltejs/language-tools",
+    "installation": "npm i -g svelte-language-server",
     "debugger": "Not available"
   },
   {
